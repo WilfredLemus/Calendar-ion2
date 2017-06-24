@@ -6,20 +6,27 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { EventModalPage } from "../pages/event-modal/event-modal";
+
+import { NgCalendarModule } from 'ionic2-calendar';
+
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage,
+    EventModalPage
   ],
   imports: [
+    NgCalendarModule,
     BrowserModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    EventModalPage
   ],
   providers: [
     StatusBar,
